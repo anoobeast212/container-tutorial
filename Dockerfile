@@ -16,8 +16,8 @@ COPY data.json data.json
 # 6. Create index.js
 COPY index.js index.js
 
-ENV PORT=3000
-EXPOSE 3000
+ENV PORT=8080
+EXPOSE 8080
 
 # 7. Run the application using command node index.js
 CMD ["node", "index.js"]
