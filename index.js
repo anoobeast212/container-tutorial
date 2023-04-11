@@ -53,6 +53,14 @@ const init = async () => {
   // Read all contacts
   server.route({
     method: 'GET',
+    path: '/',
+    handler: function (request, h) {
+
+        return 'Hello World!';
+    }
+});
+  server.route({
+    method: 'GET',
     path: '/contacts',
     handler: () => {
       return getPhoneNumber()
